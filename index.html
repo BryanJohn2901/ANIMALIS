@@ -123,6 +123,11 @@
                     </div>
                 </div>
 
+                <div>
+                    <label for="lead-pet" class="block text-sm font-medium text-gray-300 mb-1">Qual ou quais animal de estimação vc tem?</label>
+                    <textarea id="lead-pet" name="pet" rows="3" placeholder="Ex: cachorro, gato, hamster..." class="w-full px-4 py-3 rounded-lg bg-brand-bg/10 border border-white/10 text-white placeholder-gray-500 focus:border-brand-primary focus:ring-1 focus:ring-brand-primary outline-none transition resize-y min-h-[80px]"></textarea>
+                </div>
+
                 <button type="submit" class="w-full bg-brand-primary text-white font-sans font-bold py-4 rounded-full uppercase tracking-widest hover:shadow-[0_0_20px_rgba(243,111,68,0.6)] transition btn-submit mt-2">
                     Avançar para Pagamento
                 </button>
@@ -254,7 +259,8 @@
                 email: document.getElementById('lead-email').value.trim(),
                 whatsapp: '+55' + telDigitos,
                 cidade: document.getElementById('lead-cidade').value.trim(),
-                uf: document.getElementById('lead-uf').value.trim()
+                uf: document.getElementById('lead-uf').value.trim(),
+                animal_estimacao: document.getElementById('lead-pet').value.trim()
             };
 
             // AQUI ESTÁ O NOVO WEBHOOK ATUALIZADO
