@@ -1,0 +1,13 @@
+{
+  "name": "animalis-ebook",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "clean": "node -e \"const fs=require('fs');const p='dist';if(fs.existsSync(p)){fs.rmSync(p,{recursive:true});}fs.mkdirSync(p,{recursive:true});console.log('dist limpa e recriada.');\""
+  },
+  "devDependencies": {
+    "html-minifier-terser": "^7.2.0",
+    "terser": "^5.36.0"
+  }
+}
